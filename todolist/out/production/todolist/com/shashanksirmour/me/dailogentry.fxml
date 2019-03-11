@@ -1,0 +1,26 @@
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.DatePicker?>
+<DialogPane
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.shashanksirmour.me.DailogentryController"
+>
+    <headerText>
+        <!--here we can write dit=rectly if you uncomment it then also works fine -->
+    </headerText>
+    <content>
+        <GridPane vgap="10" hgap="10">
+            <Label text="Short Description  :" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="shortd" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label  text="Detail Description :" GridPane.columnIndex="0" GridPane.rowIndex="1"  />
+            <TextArea fx:id="detail" GridPane.rowIndex="1" GridPane.columnIndex="1" wrapText="true"/>
+            <Label text="Deadline for task  :" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <DatePicker fx:id="datepick" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+        </GridPane>
+    </content>
+
+
+</DialogPane>

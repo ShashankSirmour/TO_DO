@@ -1,0 +1,74 @@
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="mainborder"
+            fx:controller="com.shashanksirmour.me.Controller"
+>
+    <top>
+        <MenuBar style="-fx-background-color: rgb(28,28,29);-fx-background-radius: 5">
+            <Menu text="FILE">
+                <items>
+                    <MenuItem text="New" onAction="#showitemDialoge" />
+                    <SeparatorMenuItem />
+                    <MenuItem text="Exit" />
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
+    <left>
+        <!--if we use change overload then remove onMouseClicked-->
+        <ListView fx:id="sortdis" style=" -fx-background-radius: 5; ">
+
+        </ListView>
+    </left>
+    <center>
+        <VBox>
+            <TextArea fx:id="dit" editable="false" VBox.vgrow="ALWAYS" wrapText="true" >
+                <font>
+                    <Font size="14" />
+                </font>
+            </TextArea>
+            <HBox style="-fx-background-color: #1c1c1d;" >
+                <VBox HBox.hgrow="ALWAYS">
+                    <Label fx:id="dateis" style="-fx-text-fill: white">
+                        <font>
+                            <Font name="Chiller Regular" size="20"/>
+                        </font>
+                    </Label>
+                </VBox>
+                <padding>
+                    <Insets right="10">
+
+                    </Insets>
+                </padding>
+                <VBox>
+                    <HBox>
+                        <Label fx:id="timing"  alignment="CENTER_RIGHT" style="-fx-text-fill: white;">
+                            <font>
+                                <Font name="Chiller Regular" size="10"/>
+                            </font>
+                        </Label>
+                    </HBox>
+                    <HBox>
+                        <Label fx:id="dating"   style="-fx-text-fill: white; " alignment="CENTER_RIGHT">
+                            <font>
+                                <Font name="Chiller Regular" size="10"/>
+                            </font>
+                        </Label>
+                    </HBox>
+
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
