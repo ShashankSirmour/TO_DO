@@ -4,4 +4,4 @@
 
 
 #### to do
-##### - delete feature
+##### - delete notes
