@@ -5,3 +5,4 @@
 
 #### to do
 ##### - delete notes
+##### - bottom time updatewith ui update
