@@ -7,4 +7,4 @@
 ##### - delete notes
 ##### - bottom time update with ui update
 ##### - filter notes ordered by time
-
+##### - make background process
